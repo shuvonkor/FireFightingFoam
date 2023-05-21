@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* color code : 12387F   #DF261C*/
+
+/* Navbar  */
+.navbar{
+    background-color: #12387F !important;
+}
+.navbar-brand img{
+    max-width: 250px;
+    max-height: 60px;
+} 
+/* Navbar  */
+
+/* Home page  */
+#home-page{
+    background-image: url(/img/pic\ 1.jpg);
+    height: 100%;
+    
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+#home-page div{
+    height: 100vh;
+}
+/* Home page  */
