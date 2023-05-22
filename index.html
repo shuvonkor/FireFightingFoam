@@ -28,17 +28,17 @@
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- Google Fonts  -->
 </head>
 <body>
     <!-- Navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light" id="home">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="" class="img-fluid"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars toggler-icon"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -46,7 +46,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#case-file">Case File</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Link</a>
@@ -59,7 +59,7 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <button class="btn btn-outline-success" type="submit">File a case</button>
+                    <a href="#case-file"><button class="file-a-case-button" type="submit">File a case</button></a>
                 </div>
             </div>
         </div>
@@ -81,19 +81,21 @@
                     <img src="./img/pic 1.jpg" class="d-block img-fluid w-100" alt="...">
                     <div class="carousel-caption  d-flex flex-column justify-content-center h-100">
                         <h1>Welcome to <br> <span>Fire fighting Foam</span></h1>
-                        <p>Lifesaving or Lethal</p>
+                        <p>Your Ultimate Resource for Safety and Protection!</p>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="2000">
-                    <img src="./img/pic 1.jpg" class="d-block img-fluid w-100" alt="...">
+                    <img src="./img/pic 2.jpg" class="d-block img-fluid w-100" alt="...">
                     <div class="carousel-caption  d-flex flex-column justify-content-center h-100">
-                        <h1>ust because civilians & service members use foam to save lives and property does not mean the substance itself is safe.</h1>
+                        <h1>Control Flames <br> <span>Protect with Foam</span></h1>
+                        <p>Unleash the Power of Fire Fighting Foam for Ultimate Safety.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/pic 1.jpg" class="d-block img-fluid w-100" alt="...">
+                    <img src="./img/pic 3.jpg" class="d-block img-fluid w-100" alt="...">
                     <div class="carousel-caption  d-flex flex-column justify-content-center h-100">
-                        <h1>ust because civilians & service members use foam to save lives and property does not mean the substance itself is safe.</h1>
+                        <h1>Safety First <br> <span>Foam at the Ready</span></h1>
+                        <p>Empowering Firefighters with Cutting-Edge Fire Fighting Foam Technology.</p>
                     </div>
                 </div>
             </div>
@@ -107,31 +109,57 @@
             </button>
         </div>
     </section>
-    
     <!-- image slider  End-->
 
-    <!-- Home Page  -->
-    <!-- <section id="home-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 favourite-city-food-text">
-                    I am left content
+    <!-- Forms -->
+    <section id="case-file">
+        <div class="container case-file-form">
+            <h1>Case File Form</h1>
+            <form onsubmit="sendMail(); reset(); return false;" class="contact-form">
+                <div class="row m-auto">
+                    <div class="col-lg-6 form-group">
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required=""
+                            data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <div class="validate"></div>
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required=""
+                            data-rule="email" data-msg="Please enter a valid email">
+                        <div class="validate"></div>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 favourite-city-food-img">
-                    I am left content
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                    <div class="validate"></div>
                 </div>
-            </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" id="message"
+                        required=""></textarea>
+                    <div class="validate"></div>
+                </div>
+                <br>
+                <div class="text-center"><button type="submit" name="send_mail" value="1">Send
+                        Message</button></div>
+            </form>
         </div>
-    </section> -->
-    <!-- Home Page  -->
+    </section>
+    <!-- Forms -->
 
 
 
 
 
+    <!-- Scroll button  -->
+    <div id="progress">
+        <i id="progress-value" class="fa-solid fa-arrow-up"></i>
+        </span>
+    </div>
+    
     <footer class="page-footer">
 
     </footer>
+  
+
     <!-- JS file -->
     <script src="./js/script.js"></script>
     <!-- JS file -->
