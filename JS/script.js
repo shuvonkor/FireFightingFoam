@@ -21,18 +21,7 @@ window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 
-// let form = document.querySelector("form");
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   document.querySelector("#sub").value = "Submiting..";
-//   fetch(
-//     "https://script.google.com/macros/s/AKfycbxmRPpRz2GDTNSWyvvQClyDF4YF5qi5e1_Oi2ur-o9OdIja3B2Lngdy3P9iPR_Z19bt/exec",
-//     {
-//       method: "POST",
-//       body: data,
-//     }
-//   ).then((data) => {
-//     document.querySelector("#msg").innerHTML = data;
-//     document.querySelector("#sub").value = "Submit";
-//   });
-// });
+// Submit 
+ function disableSubmitButton() {
+   document.getElementById("submit-button").disabled = true;
+ }
