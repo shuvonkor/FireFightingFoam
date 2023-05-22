@@ -115,31 +115,83 @@
     <section id="case-file">
         <div class="container case-file-form">
             <h1>Case File Form</h1>
-            <form onsubmit="sendMail(); reset(); return false;" class="contact-form">
+            <h1 id="msg"></h1>
+            <form action="https://script.google.com/macros/s/AKfycbxmRPpRz2GDTNSWyvvQClyDF4YF5qi5e1_Oi2ur-o9OdIja3B2Lngdy3P9iPR_Z19bt/exec" class="contact-form">
                 <div class="row m-auto">
                     <div class="col-lg-6 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required=""
+                        <input type="text" name="first-name" class="form-control" id="first-name" placeholder="First Name" required=""
                             data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                         <div class="validate"></div>
                     </div>
                     <div class="col-lg-6 form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required=""
-                            data-rule="email" data-msg="Please enter a valid email">
+                        <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Last Name" required="" data-rule="minlen:4"
+                            data-msg="Please enter at least 4 chars">
                         <div class="validate"></div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="" data-rule="email"
+                        data-msg="Please enter a valid email">
                     <div class="validate"></div>
                 </div>
+                <div class="row m-auto">
+                    <div class="col-lg-6 form-group">
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="col-lg-6 form-group">
+                        <input type="text" name="zip-code" class="form-control" id="validationCustom05" placeholder="Zip Code" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Message" id="message"
+                    <label for="validationCustom04" class="form-label">State</label>
+                    <select name="afff" class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label  for="validationCustom04" class="form-label">State</label>
+                    <select name="cancers" class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="validationCustom04" class="form-label">State</label>
+                    <select name="attorney" class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Please describe where the exposure took place & any other details" id="message"
                         required=""></textarea>
                     <div class="validate"></div>
                 </div>
-                <br>
-                <div class="text-center"><button type="submit" name="send_mail" value="1">Send
-                        Message</button></div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            By checking this box and clicking the "Agree and Submit" button below, I represent that I am 18+ years of age and have
+                            read and agreed to the National Injury Bureau Terms and Conditions and Privacy Policy; I consent to the transfer of
+                            information that I provide on this site to third-party legal service providers and non-legal service providers, third
+                            party partners and their affiliates and service providers; I agree to be contacted by email & telephone, which may
+                            include artificial or pre-recorded calls and/or SMS text messages, delivered via automated technology, to the email and
+                            phone number that I have provided.
+                        </label>
+                        <div class="invalid-feedback">
+                            You must agree before submitting.
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" id="sub">Submit</button>
             </form>
         </div>
     </section>
