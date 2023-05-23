@@ -60,16 +60,16 @@
 
 .carousel-caption h1 {
     font-family: 'Teko', sans-serif;
-    font-size: 100px;
+    font-size: 90px;
     text-transform: uppercase;
-    letter-spacing: 8px;
+    letter-spacing: 7px;
     color: #fff;
     font-weight: 600;
     text-shadow: 2px 2px 4px #000000;
 }
 
 .carousel-caption p {
-    font-size: 35px;
+    font-size: 32px;
     letter-spacing: 3px;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -184,7 +184,7 @@
 }
 
 .footer-contact-info h6 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bolder;
 }
 
@@ -202,7 +202,7 @@
 }
 
 .contact-option .social-links {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .contact-option .social-links a {
@@ -210,7 +210,7 @@
 }
 
 .footer-quick-links h6 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bolder;
 }
 
@@ -224,7 +224,7 @@
 }
 
 .footer-newsletter h6 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bolder;
 }
 
@@ -279,3 +279,5 @@
     color: #12387F;
 }
 /* scroll button End*/
+
+

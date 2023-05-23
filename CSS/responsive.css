@@ -1,0 +1,84 @@
+/* Navbar  Start*/
+@media screen and (max-width: 600px) {
+    .file-a-case-button {
+        font-size: 14px;
+        letter-spacing: 2px;
+        padding: 8px 18px;
+    }
+}
+
+/* Navbar  End*/
+
+/* Slider  Start*/
+@media screen and (max-width: 600px) {
+    .carousel-caption h1 {
+        font-size: 30px !important;
+        font-weight: 200 !important;
+        letter-spacing: 1px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px !important;
+        letter-spacing: 1px;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    .carousel-caption h1 {
+        font-size: 30px;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+
+    .carousel-caption p {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .carousel-caption h1 {
+        font-size: 60px;
+        letter-spacing: 6px;
+        font-weight: 500;
+    }
+
+    .carousel-caption p {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+}
+
+/* Slider  End*/
+
+
+/* Form  Start*/
+@media screen and (max-width: 600px) {
+    .case-file-form h1 {
+        text-align: center;
+        margin: 25px 0;
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #DF261C;
+    }
+}
+
+/* Form  End*/
+
+/* Another case file section  Start*/
+@media screen and (max-width: 600px) {
+    #another-case-file-section h3 {
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 772px) {
+    #another-case-file-section h3 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+/* Another case file section  End*/
