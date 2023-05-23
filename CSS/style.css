@@ -1,17 +1,14 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Teko', sans-serif;
-
 }
 
-/* color code : 12387F   #DF261C*/
-
-/* Navbar  */
+/* Navbar  Start*/
 .navbar {
     background-color: #DF261C !important;
 }
+
 .navbar-brand img {
     max-width: 250px;
     max-height: 75px;
@@ -38,20 +35,24 @@
     padding: 8px 20px;
     text-transform: uppercase;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     border: none !important;
 }
-.navbar-toggler:hover{
+
+.navbar-toggler:hover {
     border: 1px solid #12387F !important;
 }
+
 .toggler-icon {
     color: #fff;
 }
-/* Navbar  */
+
+/* Navbar  End*/
 
 
 
-/* Slider  */
+/* Slider  Start*/
 .carousel-item img {
     max-height: 100vh;
     filter: brightness(80%);
@@ -78,13 +79,17 @@
     font-weight: bolder;
     text-shadow: 5px 5px 5px #12387F;
 }
+/* Slider  End*/
 
-/* Form  */
-#case-file{
-    height: 100vh;
+
+/* Form  Start*/
+#case-file {
+
     padding: 60px 0;
+    margin-bottom: 10px;
 }
-.case-file-form h1{
+
+.case-file-form h1 {
     text-align: center;
     margin: 30px 0;
     font-size: 50px;
@@ -92,19 +97,161 @@
     text-transform: uppercase;
     color: #DF261C;
 }
-.case-file-form form{
 
-}
-.case-file-form form input{
-
+.form-group {
+    margin-bottom: 15px;
 }
 
+.form-group #sub {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    background-color: #12387F;
+    border: none;
+    padding: 8px 30px;
+    text-transform: uppercase;
+}
+/* Form  End*/
 
 
+/* PFAS Start */
+#pfas {
+    padding: 60px 0;
+    margin-bottom: 10px;
+}
+
+#pfas h1 {
+    margin-bottom: 20px;
+    color: #DF261C;
+}
+
+.pfas-content {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.pfas-content i {
+    margin: 0px 20px;
+}
+
+.pfas-content span {
+    display: block;
+    margin: 15px 0;
+}
+/* PFAS End */
 
 
+/* Health Concerns and Costs Start*/
+#health-concerns-and-costs {
+    padding: 60px 0;
+    margin-bottom: 10px;
+}
 
-/* scroll button  */
+#health-concerns-and-costs h1 {
+    margin-bottom: 20px;
+    color: #DF261C;
+}
+/* Health Concerns and Costs End*/
+
+
+/* Another case file section  Start*/
+#another-case-file-section {
+    padding: 70px 0;
+    background-color: #EDF2F7;
+    margin-top: 10px;
+}
+
+#another-case-file-section h3 {
+    color: #000;
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#another-case-file-section button {
+    font-size: 20px;
+}
+/* Another case file section  End*/
+
+
+/* Footer Start*/
+#footer {
+    padding: 50px 0;
+    background-color: #DF261C;
+    color: #fff;
+}
+
+.footer-contact-info h6 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.contact-option p span {
+    font-size: 18px;
+}
+
+.contact-option a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-option a:hover {
+    color: #12387F;
+}
+
+.contact-option .social-links {
+    font-size: 30px;
+}
+
+.contact-option .social-links a {
+    margin-right: 10px;
+}
+
+.footer-quick-links h6 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.footer-quick-links ul li {
+    list-style-type: none;
+}
+
+.footer-quick-links ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-newsletter h6 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.footer-newsletter .email {
+    font-size: 16px;
+    padding: 6px 20px;
+}
+
+.footer-newsletter .submit {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 400;
+    background-color: #12387F;
+    border: none;
+    padding: 8px 20px;
+    text-transform: uppercase;
+}
+
+.footer-end {
+    font-size: 18px;
+}
+/* Footer End*/
+
+
+/* scroll button Start*/
 #progress {
     background-color: #12387F;
     position: fixed;
@@ -131,3 +278,4 @@
     font-size: 20px;
     color: #12387F;
 }
+/* scroll button End*/

@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <title>Fire Fighting Foam</title>
+
     <!-- FavIcon -->
     <link rel="icon" type="image/x-icon" href="./img/apple-touch-icon.png">
     <!-- FavIcon -->
-    
+
     <!-- css file  -->
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/responsive.css">
     <!-- css file  -->
-    
-    
+
+
     <!-- Front Awesome kit  -->
     <script src="https://kit.fontawesome.com/f56a2b051a.js" crossorigin="anonymous"></script>
     <!-- Front Awesome kit  -->
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
-    
+
     <!-- Google Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Teko:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <!-- Google Fonts  -->
+
 </head>
+
 <body>
-    <!-- Navbar  -->
+    <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-light" id="home">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="" class="img-fluid"></a>
@@ -49,13 +53,10 @@
                         <a class="nav-link" href="#case-file">Case File</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#pfas">Pfas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#health-concerns-and-costs">Health & Costs</a>
                     </li>
                 </ul>
                 <div class="d-flex">
@@ -64,17 +65,18 @@
             </div>
         </div>
     </nav>
-    <!-- Navbar  -->
+    <!-- Navbar  End -->
 
-
-    <!-- image slider  Start-->
+    <!-- Slider  Start-->
     <section id="carousel">
         <div id="carouselExampleDark" class="carousel carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="10000">
@@ -99,49 +101,55 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </section>
-    <!-- image slider  End-->
+    <!-- Slider  End-->
 
-    <!-- Forms -->
+    <!-- Form  Start -->
     <section id="case-file">
         <div class="container case-file-form">
             <h1>Case File Form</h1>
             <h1 id="msg"></h1>
-            <form action="https://script.google.com/macros/s/AKfycbyp7YrDXWY_X_XGn_aDmKWKoVjrZKwxraaJ0SEId7SGWFTcFlpYB8lgqLJyyp8XQnM/exec" class="contact-form">
+            <form
+                action="https://script.google.com/macros/s/AKfycbyp7YrDXWY_X_XGn_aDmKWKoVjrZKwxraaJ0SEId7SGWFTcFlpYB8lgqLJyyp8XQnM/exec"
+                class="contact-form">
                 <input type="hidden" name="action" value="submitForm">
-                <div class="row m-auto">
+                <div class="row">
                     <div class="col-lg-6 form-group">
-                        <input type="text" name="first-name" class="form-control" id="first-name" placeholder="First Name" required=""
-                            data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                        <input type="text" name="first-name" class="form-control" id="first-name"
+                            placeholder="First Name" required="" data-rule="minlen:4"
+                            data-msg="Please enter at least 4 chars">
                         <div class="validate"></div>
                     </div>
                     <div class="col-lg-6 form-group">
-                        <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Last Name" required="" data-rule="minlen:4"
-                            data-msg="Please enter at least 4 chars">
+                        <input type="text" name="last-name" class="form-control" id="last-name" placeholder="Last Name"
+                            required="" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                         <div class="validate"></div>
                     </div>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="" data-rule="email"
-                        data-msg="Please enter a valid email">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                        required="" data-rule="email" data-msg="Please enter a valid email">
                     <div class="validate"></div>
                 </div>
-                <div class="row m-auto">
+                <div class="row">
                     <div class="col-lg-6 form-group">
                         <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone" required>
                         <div class="validate"></div>
                     </div>
                     <div class="col-lg-6 form-group">
-                        <input type="text" name="zip-code" class="form-control" id="validationCustom05" placeholder="Zip Code" required>
+                        <input type="text" name="zip-code" class="form-control" id="validationCustom05"
+                            placeholder="Zip Code" required>
                         <div class="invalid-feedback">
                             Please provide a valid zip.
                         </div>
@@ -150,76 +158,238 @@
 
 
                 <div class="form-group">
-                    <label for="validationCustom04" class="form-label">State</label>
+                    <label for="validationCustom04" class="form-label">How were you exposed to firefighting foam
+                        (AFFF)?</label>
                     <select name="afff" class="form-select" id="validationCustom04" required>
                         <option selected disabled value="">Choose...</option>
-                        <option>...</option>
+                        <option>Civilian Firefighter</option>
+                        <option>Airport Personnel</option>
+                        <option>Civilian Firefighter</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label  for="validationCustom04" class="form-label">State</label>
+                    <label for="validationCustom04" class="form-label">Did you or a loved one develop any of the these
+                        cancers following the exposure?</label>
                     <select name="cancers" class="form-select" id="validationCustom04" required>
                         <option selected disabled value="">Choose...</option>
-                        <option>...</option>
+                        <option>Kidney Cancer</option>
+                        <option>Bladder Cancer</option>
+                        <option>No Cancer</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="validationCustom04" class="form-label">State</label>
+                    <label for="validationCustom04" class="form-label">Do you already have an attorney representing this
+                        case?</label>
                     <select name="attorney" class="form-select" id="validationCustom04" required>
                         <option selected disabled value="">Choose...</option>
-                        <option>...</option>
+                        <option>No</option>
+                        <option>Yes</option>
                     </select>
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Please describe where the exposure took place & any other details" id="message"
+                    <textarea class="form-control" name="message" rows="5"
+                        placeholder="Please describe where the exposure took place & any other details" id="message"
                         required=""></textarea>
                     <div class="validate"></div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 form-group">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                         <label class="form-check-label" for="invalidCheck">
-                            By checking this box and clicking the "Agree and Submit" button below, I represent that I am 18+ years of age and have
-                            read and agreed to the National Injury Bureau Terms and Conditions and Privacy Policy; I consent to the transfer of
-                            information that I provide on this site to third-party legal service providers and non-legal service providers, third
-                            party partners and their affiliates and service providers; I agree to be contacted by email & telephone, which may
-                            include artificial or pre-recorded calls and/or SMS text messages, delivered via automated technology, to the email and
-                            phone number that I have provided.
+                            By checking this box and clicking the "Agree and Submit" button below, I represent that I am
+                            18+ years of age and have
+                            read and agreed to the National Injury Bureau Terms and Conditions and Privacy Policy.
                         </label>
                         <div class="invalid-feedback">
                             You must agree before submitting.
                         </div>
                     </div>
                 </div>
-                
-                <button type="submit" id="sub">Submit</button>
+                <div class="form-group text-center">
+                    <button type="submit" id="sub">Submit</button>
+                </div>
             </form>
         </div>
     </section>
-    <!-- Forms -->
+    <!-- Form  End -->
+
+    <!-- PFAS Start  -->
+    <section id="pfas">
+        <div class="container">
+            <div class="container">
+                <h1 class="text-center text-uppercase">Firefighting foam contains substances</h1>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <img src="./img/pfas.jpg" alt="" class="img-thumbnail img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pfas-content">
+                        <p class="text-start">
+                            Firefighting foam, which is commonly utilized to suppress and extinguish fires involving
+                            flammable liquids, has garnered
+                            significant attention and concern due to the presence of substances known as per- and
+                            polyfluoroalkyl substances (PFAS).
+                            <span></span>
+                            Firefighting foam contains substances called PFAS. Certain types of PFAS, such as PFOA and
+                            PFOS, can be toxic. There are
+                            two primary reasons why:
+                        </p>
+                        <div class="pfas-reasons">
+                            <div class="d-flex forever-chemicals">
+                                <div class="">
+                                    <i class="fa-brands fa-slack"></i>
+                                </div>
+                                <div class="">
+                                    <h5>Forever Chemicals</h5>
+                                    <p>These types of PFAS are often known as 'forever chemicals' because they do not
+                                        break down in the environment or human
+                                        bodies. The ramifications for health could be life-long.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex carcinogens">
+                                <div class="">
+                                    <i class="fa-brands fa-slack"></i>
+                                </div>
+                                <div class="">
+                                    <h5>Carcinogens</h5>
+                                    <p>These chemicals have also been proven to be carcinogenic.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PFAS End  -->
+
+    <!-- Health Concerns and Costs Start  -->
+    <section id="health-concerns-and-costs">
+        <div class="container">
+            <h1 class="text-center text-uppercase">Health Concerns and Costs</h1>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 health-concerns">
+                    <div class="card">
+                        <img src="./img/health.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Health Concerns</h5>
+                            <p class="card-text">Carcinogens cause many cancers by affecting your DNA on a cellular
+                                level. These chemicals can also weaken your immune
+                                system. Aside from cancers, PFAS have also been shown to cause other conditions, such as
+                                fertility and pregnancy issues,
+                                liver damage, increased cholesterol, asthma, thyroid disease, and more.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 text-center costs">
+                    <div class="card">
+                        <img src="./img/costs.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Costs</h5>
+                            <p class="card-text">Treatments for these types of conditions can be extremely expensive.
+                                Ultimately, exposure to firefighting foam could
+                                mean a lifetime of suffering—and struggling to pay staggering hospital bills. If this is
+                                your experience, it’s time to
+                                be proactive about compensation for your pain.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Health Concerns and Costs End  -->
 
 
+    <!-- Another case file section  Start  -->
+    <Section id="another-case-file-section">
+        <div class="container text-center">
+            <h3>If you have been adversely affected by exposure to firefighting foam, it is important to prioritize
+                safeguarding your
+                future. Seeking the guidance of a skilled liability attorney can prove invaluable in gathering evidence,
+                constructing a
+                robust case, and advocating for a favorable outcome on your behalf.</h3>
+            <div>
+                <a href="#case-file"><button class="file-a-case-button" type="submit">File a case</button></a>
+            </div>
+        </div>
+    </Section>
+    <!-- Another case file section End  -->
+
+    <!-- Footer Start -->
+    <footer id="footer">
+        <div class="container footer-box">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 footer-contact-info">
+                    <h6>Fire Fighting Foam.</h6>
+                    <p>00000 Abcdefg, Gdkcls, USA</p>
+                    <div class="contact-option">
+                        <p> <span>Email:</span> <a href="">info@firefightingfoam.com</a></p>
+
+                        <div class="social-links d-flex">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 footer-quick-links">
+                    <h6>Quick Links</h6>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href="#home">HOME</a>
+                        </li>
+
+                        <li>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href="#case-file">Case file</a>
+                        </li>
 
 
+                        <li>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href="#pfas">Pfas</a>
+                        </li>
 
-    <!-- Scroll button  -->
+                        <li>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <a href="#health-concerns-and-costs">Health & Costs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 footer-newsletter">
+                    <h6>Our Newsletter</h6>
+                    <form action="" method="post">
+                        <input class="email" type="email" name="email"><input class="submit" type="submit"
+                            value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end text-center">
+            <p>
+                &#169; Copyright Fire Fighting Foam. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Scroll button Start -->
     <div id="progress">
         <i id="progress-value" class="fa-solid fa-arrow-up"></i>
         </span>
     </div>
-    
-    <footer class="page-footer">
-
-    </footer>
-  
+    <!-- Scroll button Start End-->
 
     <!-- JS file -->
     <script src="./js/script.js"></script>
     <!-- JS file -->
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
 </body>
+
 </html>

@@ -1,3 +1,4 @@
+// scroll button Start
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
   let progressValue = document.getElementById("progress-value");
@@ -19,9 +20,11 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+// scroll button End
 
 
-// Submit 
+// Submit Start
  function disableSubmitButton() {
    document.getElementById("submit-button").disabled = true;
- }
+}
+// Submit End
